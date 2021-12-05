@@ -11,19 +11,20 @@ public class Main {
         ArrayList<String> purchases = new ArrayList<>();
         ArrayList<Double> purchase_price = new ArrayList<>();
         ArrayList<String> products = new ArrayList<>();
-        ArrayList<Double> prices = new ArrayList<>();
+        ArrayList<Double> price_list = new ArrayList<>();
 
-        products.add("Bison sweater");
-        prices.add(55.99);
+        products.add("Bison bumpersticker");
+        price_list.add(4.99);
         
         products.add("Bison tee");
-        prices.add(14.99);
+        price_list.add(14.99);
         
         products.add("Bison hoodie");
-        prices.add(23.99);
+        price_list.add(23.99);
         
-        products.add("Bison bumpersticker");
-        prices.add(4.99);
+        products.add("Bison sweater");
+        price_list.add(55.99);
+        
 
         Scanner input = new Scanner(System.in);
         String item;
@@ -38,7 +39,7 @@ public class Main {
                     index = i;
                 }
             }
-            purchase_price.add(prices.get(index));
+            purchase_price.add(price_list.get(index));
         } 
         while (!item.equalsIgnoreCase("none"));
         
