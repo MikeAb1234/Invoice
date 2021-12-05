@@ -8,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        ArrayList<String> purchases = new ArrayList<>();
+        ArrayList<Double> purchase_price = new ArrayList<>();
         ArrayList<String> products = new ArrayList<>();
         ArrayList<Double> prices = new ArrayList<>();
-        ArrayList<String> purchases = new ArrayList<>();
-        ArrayList<Double> purchaseprices = new ArrayList<>();
 
         products.add("Bison sweater");
         prices.add(55.99);
@@ -38,13 +38,13 @@ public class Main {
                     index = i;
                 }
             }
-            purchaseprices.add(prices.get(index));
+            purchase_price.add(prices.get(index));
         } 
         while (!item.equalsIgnoreCase("none"));
         
         for (int i = 0; i < purchases.size() - 1; i++) {
             System.out.println("Items that I purchased: " + purchases.get(i));
-            sum += purchaseprices.get(i);
+            sum += purchase_price.get(i);
         }
 
         System.out.println("Total: " + sum);
