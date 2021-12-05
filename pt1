@@ -8,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<String> products = new ArrayList<String>();
-        ArrayList<Double> prices = new ArrayList<Double>();
-        ArrayList<String> purchases = new ArrayList<String>();
-        ArrayList<Double> purchaseprices = new ArrayList<Double>();
+        ArrayList<String> products = new ArrayList<>();
+        ArrayList<Double> prices = new ArrayList<>();
+        ArrayList<String> purchases = new ArrayList<>();
+        ArrayList<Double> purchaseprices = new ArrayList<>();
 
         products.add("Bison sweater");
         prices.add(55.99);
